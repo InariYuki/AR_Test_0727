@@ -27,14 +27,13 @@ namespace KitsuneYuki{
         }
         //卡片不見的行為
         void CardLost(){
-            print("Card lost !");
             BGM.Stop();
         }
         void Attack(){
-            print("attack !");
+            card_object_animator.SetTrigger("TriggerAttack");
         }
         void Jump(VirtualButtonBehaviour do_something){
-            print("Jump !");
+            card_object_animator.SetTrigger("TriggerJump");
         }
     }
 }
